@@ -1,0 +1,28 @@
+192.168.0.0/26
+255.255.255.0
+ 8   8   8  0 = 24 bits, e precisa de 26 bits.
+ 8   8   8  11000000 = 26 bits.
+ 2(^7) + 2(^6) = 128 + 64 = 192.
+nova máscara 255.255.255.192
+
+hosts = 2(^n) - 2 = 2(^6) - 2 = 62 hosts.
+broadcast = numero de hosts + endereço de rede.
+broadcast = 62 + 0 = 63. 
+
+maior quantidades de bits classe C = 32, para descobrir faz /32 - /26 = 6(quantidade de zeros dos bits da quarta linha "11000000")
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+192.168.0.0/18
+
+pega o valor do /18 e subtrai por 32 bits = 14 bits.
+número de hosts é igual 2(^14) - 2.
+
+numero de hosts = 2(^n) = 2(^14) = 16.384 - 2 = 16.382 hosts.
+
+subredes = 2(^n) / 256 => 2(^14) / 256 = 64 subredes.
+
+subredes = usou todas as redes 256 redes e precisou puxar mais 64 de outra rede no caso o penbultimo 0 do 192.168.0.0.
+
+novo ip = 192.168.64.255.
+

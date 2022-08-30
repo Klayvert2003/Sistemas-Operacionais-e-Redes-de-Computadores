@@ -1,0 +1,14 @@
+10.0.0.0 /17 => 32 - 17 = potenciação de hosts.
+255.255.128.0 
+ 8   8   10000000 0 (soma os bits que não forem 0, e ele será o CDIR)
+
+CDIR = /17
+
+HOSTS = 2(^32-17 = 15) = 32.768 - 2 = 32.766
+
+SUBREDES = 128
+
+BROADCAST = 10.0.127.255
+
+
+

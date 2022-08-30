@@ -1,0 +1,14 @@
+endereço rede
+10.0.0.0
+
+máscara
+255.255.255.192
+
+Quantos hosts?
+R: 2(^n) - 2 = 64 - 2 = 62
+
+Quantos subredes?
+R: 0 subredes, 1 rede.
+
+Qual o broadcast?
+R: 10.0.0.63
